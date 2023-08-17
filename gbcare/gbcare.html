@@ -1,0 +1,592 @@
+<!doctype html>
+<head>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>COVID-19 | Royal College of Nursing</title>
+	<link rel = "icon" href = "gbcare9.jpeg" type = "image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		.header
+		{
+			color: #3368a0; 
+			font-family: sans-serif; 
+			font-size: 15px;
+			float:right;
+			margin-top: 30px;
+			text-decoration: none;
+			margin-left: 20px;
+
+		}
+		.header:hover
+		{
+			color: #3368a0; 
+			font-family: sans-serif; 
+			font-size: 15px;
+			float:right;
+			text-decoration:underline;
+			margin-top: 30px;
+			margin-left: 20px;
+
+		}
+
+		.member
+		{
+			background-color: #da0042; 
+			border: 1px solid #da0042; 
+			color: white; 
+			font-family: sans-serif; 
+			font-size: 15px;
+			float:right;
+			text-decoration: none;
+			padding-left: 12px; 
+			padding-right: 12px; 
+			padding-top: 8px; 
+			padding-bottom: 8px; 
+			margin-top:20px;
+			margin-left: 20px;
+		}
+		.member:hover
+		{
+			background-color: #511515; 
+			border: 1px solid #511515; 
+			color: white; 
+			font-family: sans-serif; 
+			font-size: 15px;
+			float:right;
+			text-decoration:underline;
+			padding-left: 12px; 
+			padding-right: 12px; 
+			padding-top: 8px; 
+			padding-bottom: 8px; 
+			margin-top:20px;
+			margin-left: 20px;
+		}
+
+		.search
+		{
+			width: 400px; 
+			height:42px; 
+			padding: 10px; 
+			border: 1px solid #cdd1e7; 
+			color:#3368a0;
+			font-size:15px;
+			
+
+		}
+
+		.search-button
+		{
+			background-color: #3368a0;
+			padding-top: 8px; 
+			padding-bottom: 12px; 
+			padding-left: 10px;
+			padding-right: 10px;
+			border: 1px solid #3368a0; 
+			margin-left: -4px;
+		
+		}
+
+		.navbar
+		{
+			color: #3368a0; 
+			font-family: sans-serif; 
+			font-size: 15px;
+			text-decoration: none;
+			margin-left: 8px;
+
+		}
+		.navbar:hover
+		{
+			color: #3368a0; 
+			font-family: sans-serif; 
+			font-size: 15px;
+			text-decoration: underline;
+			margin-left: 8px;
+
+		}
+		.heading
+		{
+			margin-top: -10px;
+			color:#3368a0; 
+			font-family:sans-serif; 
+			font-size: 20px;
+		}
+		.heading:hover
+		{
+			margin-top: -10px;
+			color:black; 
+			font-family:sans-serif; 
+			font-size: 20px;
+		}
+		.li1
+		{
+			color:white; 
+			line-height:1.8
+		}
+		.li1:hover
+		{
+			color:lightgray; 
+			line-height:1.8
+		}
+		.bluehead
+		{
+			font-size: 20px; 
+			font-family: sans-serif; 
+			text-decoration: none; 
+			color: #004288;
+			padding-left:-10px;
+		}
+		.bluehead:hover
+		{
+			font-size: 20px; 
+			font-family: sans-serif; 
+			text-decoration: underline; 
+			color: #004288;
+			padding-left:-10px;
+		}
+		.button1
+		{
+			color:white; 
+			background-color:#004288 ; 
+			padding:10px;
+			padding-top: 5px;
+			font-size: 15px; 
+			border: 1px solid #004288
+		}
+		.button1:hover
+		{
+			color:white; 
+			background-color:black ; 
+			padding:10px;
+			padding-top: 5px;
+			font-size: 15px; 
+			border: 1px solid black
+		}
+		.button2
+		{
+			color:black; 
+			background-color:#e6e6e6 ; 
+			padding:10px;
+			padding-top: 5px;
+			font-size: 15px; 
+			border: 1px solid #e6e6e6
+		}
+		.button2:hover
+		{
+			color:black; 
+			background-color:#d1d1e0 ; 
+			padding:10px;
+			padding-top: 5px;
+			font-size: 15px; 
+			border: 1px solid #d1d1e0;
+		}
+		.searchbar
+		{
+			color: #004288; 
+			text-decoration: none;
+		}
+		.searchbar:hover
+		{
+			color: black; 
+			text-decoration: underline;
+		}
+		.margin{
+			margin-right: 200px;
+			margin-left: 200px;
+		}
+		.lastnav
+		{
+			margin-left: 870px;
+			height: 300px;
+			float: left; 
+			width: 363px; 
+			margin-top: -320px;
+		}
+		.lastdiv
+		{
+			border-left: 2px solid white; 
+			margin-left:820px;
+			height: 300px;
+		}
+
+
+		@media only screen and (max-width: 1100px) {
+  			
+  			.margin 
+  			{
+    				margin-left: 20px;
+    				margin-right:20px;
+  			}
+
+  			.lastnav
+			{
+				margin-left: 800px;
+				height: 300px;
+				float: left; 
+				width: 363px; 
+				margin-top: -320px;
+			}
+			.lastdiv
+			{
+				border-left: 2px solid white; 
+				margin-left:585px;
+				height: 290px;
+				margin-top:-20px;
+				
+			}
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<hr style="height:3.5px; width: 101.5%; background-color: #3368a0; margin:-8px">
+	<br>
+	<br>
+	
+	<section class="margin" style="width:1023px;height: 100px;margin-top: -30px;">
+	<nav>
+		<a href="#" class="member" title="Become a member" style=""><strong>BECOME A MEMBER</strong></a>
+		<a href="#" class="header" style="">Log in</a>
+		<a href="#" class="header" style="">Quick links</a>
+		<a href="#" class="header" style="">Contact</a>
+	</nav>
+</section>
+
+	<section class="margin" style="margin-top: -180px;">
+	<img src="gbcare3.svg" width="230px" height="240px" style="float:left; margin-top: -105px;">
+
+		<div style="margin-top: 150px; margin-left:583px">
+  			<input type="search" placeholder="Search" class="search" style="cursor:auto">
+  			<a href="https://www.rcn.org.uk/search?Q=&Sort=RelevanceAsc&Scope=Global" "><button class="search-button" style="cursor: pointer;">
+  			<i class="fa fa-search" style="font-size:20px;color:white"></i>
+  			</button></a>
+  		</div>
+	</section>
+
+<section class="margin" style="width:1023px; height: 100px; margin-top: -30px;">
+	<nav style="display: inline; margin-top: -50px; float:left">
+		<a href="#" class="navbar" style="">Membership</a>
+		<a href="#" class="navbar" style="">Employment and Pay</a>
+		<a href="#" class="navbar" style="">Professional Development</a>
+		<a href="#" class="navbar" style="">Library</a>
+		<a href="#" class="navbar" style="">Get Involved</a>
+		<a href="#" class="navbar" style="">Get Help</a>
+		<a href="#" class="navbar" style="">News & Events</a>
+		<a href="#" class="navbar" style="">About</a>
+	</nav>
+</section>
+
+	<section class="margin" style="margin-top: 2px; width: 1023px; height: 100px;background-color:#3368a0; text-align: center;padding-top:40px;">
+		<strong style="font-size: 40px;  color:white; font-family: sans-serif; ">COVID-19 advice and guidance</strong>
+	</section>
+	
+	<section class="margin" style=" margin-top:15px;  width: 1023px; height: 530px;">
+		<img src="gbcare1.jpeg" height="350px" width="495" style="float:left">
+		<img src="gbcare2.png" height="350px" width="495" style="float:right">
+		<div style="float:left; color:black; font-family:sans-serif; font-size: 15px;width: 495px;height: 200px">
+			<p style="font-size: 20px; text-align:center;cursor:auto"><strong>COVID-19 FAQs</strong><p>
+			<p style="text-align: center; margin-top: -10px;cursor:auto">
+			Find out how to protect yourself, what you should expect from your employer and what to do if you have concerns.
+			<p>
+			<p style="text-align:center"><a href="#" class="heading"><strong>> Read our FAQs</strong> </a></p>
+		</div>
+		<div style="float:right; color:black; font-family:sans-serif; font-size: 15px;width: 495px;height: 200px">
+			<p style="font-size: 20px; cursor:auto;text-align:center"><strong>COVID-19 clinical guidance</strong><p>
+			<p style="text-align: center; margin-top: -10px;cursor:auto">
+			Clinical information and key resources to support you with management of COVID-19.
+			<p>
+			<p style="text-align:center"><a href="#" class="heading"><strong>> Read our guidance</strong> </a></p>
+		</div>
+	</section>
+
+	<section style="background-color: #e5ecf3;height: 550px;">
+	<section class="margin" style=" width: 1023px; height: 530px;">
+		<img src="gbcare4.jpeg" height="350px" width="495" style="float:left">
+		<img src="gbcare5.jpeg" height="350px" width="495" style="float:right">
+		<div style="float:left; color:black; font-family:sans-serif; font-size: 15px;width: 495px;height: 200px">
+			<p style="font-size: 20px; text-align:center;cursor:auto"><strong>COVID-19 and your mental wellbeing</strong><p>
+			<p style="text-align: center; margin-top: -10px;cursor:auto">
+			Clinical information and key resources to support you with management of COVID-19.
+			<p>
+			<p style="text-align:center"><a href="#" class="heading"><strong> > Access our resources</strong> </a></p>
+		</div>
+		<div style="float:right; color:black; font-family:sans-serif; font-size: 15px;width: 495px;height: 200px">
+			<p style="font-size: 20px; text-align:center;cursor:auto"><strong>COVID-19 workplace risk assessment toolkit</strong><p>
+			<p style="text-align: center; margin-top: -10px;cursor:auto">
+			Our toolkit supports health care professionals to manage the risk of COVID-19 in the workplace
+			<p>
+			<p style="text-align:center"><a href="#" class="heading"><strong> > Read the toolkit </strong> </a></p>
+		</div>
+	</section>
+
+		<section class="margin" style="margin-top: 35px; width: 1023px; height: 190px;background-color: #da0042;">
+			<p><a href="https://www.rcn.org.uk/Get-Help/Legal-help/COVID-19-inquiry" style="font-size: 22px; font-family:sans-serif; color:white; float:left; padding: 20px"><strong>COVID-19 inquiry</strong></a></p>
+
+			<p style="font-size: 15px; font-family:sans-serif; color:white; cursor:auto;float:left; padding: 20px; margin-top: -30px;">The UK COVID-19 Inquiry has been set up to examine the UK’s preparedness and response to the COVID-19 pandemic, and to learn lessons for the future.
+			<br>
+			<br>Members want to look forward, ensuring that lessons learned are applied to policies and plans across health and social care. Members wishing to submit evidence to the inquiry can do so via our <a href="https://www.rcn.org.uk/Get-Help/Legal-help/COVID-19-inquiry/COVID-19-inquiry-form" style="color:white">online form.</a></p>
+	
+	</section>
+	<br>
+	<br>
+	<br>
+	
+
+<section style="background-color: #e5ecf3;height: 280px;">
+	<section class="margin" style=" width: 1023px; height: 270px;">
+		
+		<div style="float:left; color:black;margin-top: 15px; font-family:sans-serif; font-size: 15px;width: 475px;height: 220px; background-color:#004288;padding-left: 20px ">
+			<p style="font-size: 20px; color:white;"><strong>COVID-19 advice guides</strong><p>
+				<ul style="margin-top: -10px">
+				<a href="#" class="li1"><li>Vaccination</li></a>
+				<a href="#" class="li1"><li>Staffing levels</li></a>
+				<a href="#" class="li1"><li>Long COVID</li></a>
+				<a href="#" class="li1"><li>Personal protective equipment (PPE)</li></a>
+				<a href="#" class="li1"><li>Read all of our COVID-19 advice guides</li></a>
+			</ul>
+			
+		</div>
+		<div style="float:right; color:black; margin-top: 15px;font-family:sans-serif; font-size: 15px;width: 475px;height: 220px; background-color: #422f64;padding-left: 20px">
+			<p style="font-size: 20px; color:white;"><strong>COVID-19 position statements</strong><p>
+			
+			<ul style="margin-top: -10px">
+				<a href="#" class="li1"><li>Vaccination</li></a>
+				<a href="#" class="li1"><li>PPE for COVID-19</li></a>
+				<a href="#" class="li1"><li>Staff living in care homes</li></a>
+				<a href="#" class="li1"><li>Plans to expand the COVID-19 temporary register</li></a>
+				<a href="#" class="li1"><li>Read all of our COVID-19 position statements</li></a>
+			</ul>
+		</div>
+	</section>
+</section>
+
+	
+	<section class="margin" style=" width: 1023px; height: 660px;">
+		
+		<div style="float:left; color:black;margin-top: 15px; font-family:sans-serif; font-size: 15px;width: 670px;height: 520px;  ">
+
+			<section>
+				<div style="float: right; margin-top: 20px; margin-left: -10px;">
+				<img src="gbcare6.png" height="115px" width="220px">
+				</div>
+				<div style="float: left;margin-top:-135px ">
+					<p style="font-size: 12px; font-family:sans-serif; border: 1px solid #e5ecf3; width: 75px; border-radius: 2px;height: 15px; background-color: #e5ecf3;cursor:auto;">&nbsp;26 Jun 2023</p>
+					<a href="https://www.rcn.org.uk/news-and-events/news/uk-rcn-expert-declares-pandemic-preparedness-inadequate-in-evidence-to-covid-inquiry-260623" class="bluehead">
+					<strong>RCN expert declares pandemic preparedness <br>‘inadequate’ in evidence to COVID inquiry</strong></a>
+					
+					<p style="font-size: 15px; font-family: sans-serif;cursor:auto;"> Infection, prevention and control specialist nurse Rose Gallagher <br>said the UK government planned for the wrong pandemic, didn’t<br> act on learnings from previous outbreaks and failed to prepare the right protective equipment for respiratory infections like COVID-19.
+					</p>
+				</div>
+
+				<br>
+
+				<div style="float: right; margin-top: 20px; margin-left: -10px;">
+				<img src="gbcare7.png" height="118px" width="220px">
+				</div>
+				<div style="float: left;margin-top: ">
+					<p style="font-size: 12px; font-family:sans-serif; border: 1px solid #e5ecf3; width: 75px; border-radius: 2px;height: 15px; background-color: #e5ecf3;cursor:auto;">&nbsp;13 Jun 2023</p>
+					<a href="https://www.rcn.org.uk/news-and-events/news/humans-not-heroes-creative-workshops" class="bluehead">
+					<strong>Humans Not Heroes Creative Workshops</strong></a>
+					
+					<p style="font-size: 15px; font-family: sans-serif;cursor:auto;"> Creatively reflect on your own experiences of COVID-19 and co-<br>create a new audio piece which will feature in the RCN <br>exhibition.
+					</p>
+				</div>
+
+				<br>
+
+				<div style="float: right; margin-top: 35px; margin-left: -10px;">
+				<img src="gbcare8.png" height="118px" width="220px">
+				</div>
+				<div style="float: left;margin-top: ">
+					<p style="font-size: 12px; font-family:sans-serif; border: 1px solid #e5ecf3; width: 75px; border-radius: 2px;height: 15px; background-color: #e5ecf3;cursor:auto;">&nbsp;25 Apr 2023</p>
+					<a href="https://www.rcn.org.uk/news-and-events/news/unmasked-exhibition" class="bluehead">
+					<strong>Unmasked: Real Stories of Nursing in COVID-<br>19</strong></a>
+					
+					<p style="font-size: 15px; font-family: sans-serif;cursor:auto;"> RCN’s new Covid-19 exhibition reveals real nursing stories of the<br>pandemic.
+					</p>
+				</div>
+				
+			</section>
+			
+			
+		</div>
+		<div style="float:right; color:black; margin-top: 15px;font-family:sans-serif; font-size: 15px;width: 300px;height: 450px; background-color: #e5ecf3;padding-left: 20px">
+			<br>
+			<label style="font-family:sans-serif; font-size: 25px; color: black"><strong>Filter</strong></label>
+			<br>
+			<br>
+			<br>
+			<label style="font-family:sans-serif; font-size: 15px; color: black"><strong>Keyword</strong></label>
+			<br>
+				<input type="text" style="width:200px ; height: 25px; margin-top:5px;padding: 8px; border: 1.5px solid #cdd1e7;">
+				<br>
+				<br>
+				<br>
+				<label for="topic" style="font-family:sans-serif; font-size: 15px; color: black"><strong>Topic</strong></label>
+				<select id="topic"style="width:275px ; height: 45px; margin-top:5px; font-size: 15px; padding: 8px; border: 1.5px solid #cdd1e7">
+					<option>All</option>
+					<option>Congress</option>
+					<option>COVID-19</option>
+					<option>Diversity</option>
+					<option>Employment and Pay</option>
+					<option>Internation Year of the Nurse and Midwife</option>
+					<option>EU</option>
+					<option>HCAs APs and TNAs</option>
+					<option>Professional Practice</option>
+					<option>Research</option>
+					<option>Revalidation</option>
+					<option>STPs</option>
+					<option>Students</option>
+
+				</select>
+
+				<br>
+				<br>
+				<br>
+				<label for="topic" style="font-family:sans-serif; font-size: 15px; color: black"><strong>RCN Region / Country</strong></label>
+				<select id="topic"style="width:275px ; height: 45px; margin-top:5px; font-size: 15px; padding: 8px; border: 1.5px solid #cdd1e7">
+					<option>All</option>
+					<option>UK wide</option>
+					<option>England</option>
+					<option>Northern Ireland</option>
+					<option>Scotland</option>
+					<option>Wales</option>
+					<option>International</option>
+					<option>All regions</option>
+					<option>East Midlands</option>
+					<option>Eastern</option>
+					<option>London</option>
+					<option>North West</option>
+					<option>Northern</option>
+					<option>South East</option>
+					<option>South West</option>
+					<option>West Midlands</option>
+					<option>Yorkshire and the Humber</option>
+					<option>All events</option>
+
+				</select>
+				<br>
+				<br>
+
+				<a href="#"><button class="button1"><strong>&nbsp;FILTER &nbsp;&nbsp;&nbsp;</strong><i style="font-size:20px; padding-top: 4px" class="fa">&#xf054;</i></button></a>
+
+				<a href="#"><button class="button2"><strong>&nbsp;RESET FILTER &nbsp;&nbsp;&nbsp;</strong><i style="font-size:22px; padding-top: 4px; color: grey" class="fa">&#xf00d;</i></button></a>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div style="margin-left: 250px; margin-right: 200px;width: 500px; height: 100px;color:grey; font-family:sans-serif; font-size: 16px">
+<br><br><br>
+		
+		<i style="font-size:22px;color:grey" class="fa">&#xf053;</i>
+
+		&nbsp;&nbsp;Previous&nbsp;&nbsp;&nbsp; <strong style="color:black">1 of 12</strong>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="searchbar">Next</a>&nbsp;&nbsp;
+		<i style="font-size:22px; color: #004288" class="fa" >&#xf054;</i>
+
+		
+		</div>
+	</section>
+
+	<section style="background-color: #e5ecf3;height: 330px;">
+	<section class="margin" style="padding-top:1px; width: 1023px; ">
+
+		<p style="font-size: 20px; color:black; font-family: sans-serif;cursor:auto"><strong>In this section</strong><p>
+		
+		<div style="float:left; color:black; font-family:sans-serif; margin-top:-15px;font-size: 15px;width: 333px;height: 270px; ">
+
+			<ul style="">
+				<a href="#" style="color:#004288;line-height:1.8"><li>COVID-19 guidance on mental healthcare delivery</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COVID-19 and domestic abuse</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>Clinical guidance for managing COVID-19</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COVID-19 guidance on DNACPR and verification of death</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COVID-19 Remote prescribing</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>Raising concerns letter for nursing support workers</li></a>
+			</ul>
+			
+			
+		</div>
+		<div style="float:right; color:black;font-family:sans-serif; margin-top:-15px;font-size: 15px;width: 333px;height: 270px;">
+			<ul style="">
+				<a href="#" style="color:#004288;line-height:1.8"><li>100 days of COVID-19</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>Nursing during a pandemic: share your experience</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COVID-19 events</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>Nursing workforce expansion</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COpen letters</li></a>
+			</ul>
+		</div>
+		<div style="float:left; color:black;font-family:sans-serif; margin-top:-15px;font-size: 15px;width: 333px;height: 270px; margin-left: 12px;">
+			<ul style="">
+				<a href="#" style="color:#004288;line-height:1.8"><li>COVID-19 redeployment letter</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COVID-19 and raising concerns template content</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COVID-19 vaccination</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COVID-19 workplace risk assessment toolkit</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>Employment guidance for NHS staff</li></a>
+				<a href="#" style="color:#004288;line-height: 1.8;"><li>COVID-19 position statements</li></a>
+			</ul>
+			
+		</div>
+	</section>
+</section>
+	<section style="background-color: #004288;height: 330px;">
+	<section class="margin" style="padding-top:1px;float: left; width: 570px; ">
+
+		<p style="font-size: 25px; color:#e5ecf3; font-family: sans-serif;"><strong>Links</strong><p>
+		
+		<div style="float:left; color:black; font-family:sans-serif; margin-top:-15px;font-size: 15px;width: 190px;height: 250px;">
+			<a href="#" style="color:white;line-height:1.8">My RCN</a><br>
+			<a href="#" style="color:white;line-height:1.8">RCNXtra</a><br>
+			<a href="#" style="color:white;line-height:1.8">RCN Shop</a><br>
+			<a href="#" style="color:white;line-height:1.8">RCNi</a><br>
+			<a href="#" style="color:white;line-height:1.8">Career at the RCN</a><br>
+			<a href="#" style="color:white;line-height:1.8">Modern slavery statement</a><br>
+			<a href="#" style="color:white;line-height:1.8">Manage Cookies Preferences</a>
+				
+		</div>
+		<div style="float:right; color:black;font-family:sans-serif; margin-top:-15px;font-size: 15px;width: 170px;height: 250px; ">
+			<a href="#" style="color:white;line-height:1.8">RCN Learn</a><br>
+			<a href="#" style="color:white;line-height:1.8">Steward Portal</a><br>
+			<a href="#" style="color:white;line-height:1.8">Press office</a><br>
+			<a href="#" style="color:white;line-height:1.8">RCN Working with us</a><br>
+			<a href="#" style="color:white;line-height:1.8">Legal</a><br>
+			<a href="#" style="color:white;line-height:1.8">Acessibility</a><br>
+			
+		</div>
+		<div style="float:left; color:black;font-family:sans-serif; margin-top:-15px;font-size: 15px;width: 170px;height: 250px; margin-left: 10px;">
+			
+			<a href="#" style="color:white;line-height:1.8">RCN Starting Out</a><br>
+			<a href="#" style="color:white;line-height:1.8">RCN Campaigns</a><br>
+			<a href="#" style="color:white;line-height:1.8">RCN Nursing Jobs</a><br>
+			<a href="#" style="color:white;line-height:1.8">RCNi</a><br>
+			<a href="#" style="color:white;line-height:1.8">RCN Foundation</a><br>
+			<a href="#" style="color:white;line-height:1.8">Venue hire</a><br>
+			<a href="#" style="color:white;line-height:1.8">Privacy policy</a>
+				
+			
+		</div>
+	</section>
+	<section>
+		<br>
+	
+	<div ></div>
+</section>
+
+	<section class="lastdiv">
+		<p style="font-size: 25px; color:#e5ecf3; font-family: sans-serif;"><strong>Connect with us:</strong><p>
+			<span class="fa-stack fa-lg">
+  <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fthercn"><i class="fa fa-twitter fa-stack-1x fa-inverse" style="font-size: 48px"></i></a>
+
+  <a href="https://www.facebook.com/royalcollegeofnursing"><i class="fa fa-facebook fa-stack-1x fa-inverse" style="font-size: 42px; margin-left:60px"></i></a>
+
+  <a href="https://www.instagram.com/thercn/"><i class="fa fa-instagram fa-stack-1x fa-inverse" style="font-size: 48px; margin-left:120px"></i></a>
+  <a href="https://www.youtube.com/user/RCNonline"><i class="fa fa-youtube fa-stack-1x fa-inverse" style="font-size: 44px; margin-left:185px"></i></a>
+</span>
+		<p style="font-size: 15px; color:white; font-family: sans-serif;"><br>© 2023 Royal College of Nursing<p>
+	</section>
+	
+</section>
+
+
+</body>
